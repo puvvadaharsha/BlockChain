@@ -13,12 +13,12 @@
 * Make sure to have the gson jar file. If not program wont compile. One version of the JSON jar file here: https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/
 
 * To Compile:
-'''
+```
 compile javac -cp "gson-2.8.2.jar": Blockchain.java
-'''
+```
 
 * Save script below into an .scpt file
-'''
+```
 tell application "Terminal"
 
    activate
@@ -44,13 +44,13 @@ tell application "Terminal"
    do script "java -cp \"gson-2.8.2.jar\": Blockchain 2" in front window
 
 end tell
-'''
+```
 
 ### Run With:
 
-'''
+```
 run script osascript myScript.scpt
-'''
+```
 
 ### Explanation of whats going on:
 For each window, it will first create a section that says the Ports and the process number. It then generates a key pair and prints the public key. 
@@ -63,10 +63,10 @@ The random seed and the puzzle winning conditions are shown as well. Each time a
 chooses the longest chain. At the end, I used ctrl+c to terminate as I didn't have time to program an exit command.
 
 ### Sample Output when running the code:
-'''
-******************************************************************************************************************************************
+```
+******************************************************************************************************************************
 In Process 0 window: This is what process 0's window showed in the output:
-******************************************************************************************************************************************
+*****************************************************************************************************************************
 
 ++++++++++++++++++++++++++
 Process number 0 running.
@@ -543,4 +543,4 @@ b6358332-9570-426e-92e5-5feb3fc6d4f6 2020-05-27.20:46:15:234.2 Joe DiMaggio HV89
 2fbc4680-90aa-43eb-bfea-02cefd6a13be 2020-05-27.20:46:15:518.1 Sally McCutty G8STAC05 Process 2
 babbb9f8-6578-45ad-b8b1-6b064e06ef76 2020-05-27.20:46:15:623.1 Bruce Lee YHGW6N99 Process 1
 ^C%                                                                                                    
-'''
+```
